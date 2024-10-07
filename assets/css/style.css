@@ -10757,7 +10757,7 @@ header.in-box {
 @media (max-width: 768px) {
 
   /* Adjust the max-width value as needed */
-  #slider-bar {
+  .slider-bar {
     display: none;
     /* This hides the slider bar */
   }
