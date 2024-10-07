@@ -10754,5 +10754,13 @@ header.in-box {
     margin: auto;
   }
 }
+@media (max-width: 768px) {
+
+  /* Adjust the max-width value as needed */
+  #slider-bar {
+    display: none;
+    /* This hides the slider bar */
+  }
+}
 
 /* ====================== [ End Responsive ] ====================== */
