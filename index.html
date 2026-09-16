@@ -29,6 +29,16 @@
         rel="stylesheet">
 
     <!-- Plugins -->
+    <style>
+        .page-loader { position: fixed; inset: 0; z-index: 20000; display: grid; place-content: center; justify-items: center; gap: 22px; background: #16131e; color: #eee9f4; font-family: system-ui, sans-serif; text-align: center; }
+        .page-loader[hidden] { display: none; }
+        .page-loader-mark { width: 54px; height: 54px; border: 2px solid #c7a4f525; border-top-color: #c7a4f5; border-right-color: #ad4bc5; border-radius: 50%; animation: loader-spin .8s linear infinite; }
+        .page-loader p { margin: 0; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; }
+        .page-loader button { padding: 12px 18px; border: 1px solid #c7a4f550; border-radius: 24px; background: transparent; color: #c7a4f5; font: inherit; font-size: 12px; cursor: pointer; }
+        .page-loader button:focus-visible { outline: 2px solid #c7a4f5; outline-offset: 4px; }
+        @keyframes loader-spin { to { transform: rotate(360deg); } }
+        @media (prefers-reduced-motion: reduce) { .page-loader-mark { animation: none; } }
+    </style>
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
 
     <!-- Core Style Css -->
@@ -38,6 +48,35 @@
 </head>
 
 <body class="home-main-crev main-bg">
+    <div class="page-loader" hidden>
+        <span class="page-loader-mark" aria-hidden="true"></span>
+        <p role="status">Loading portfolio</p>
+        <button type="button">Continue to site</button>
+    </div>
+    <script>
+        (() => {
+            const loader = document.querySelector('.page-loader');
+            loader.hidden = false;
+            const dismiss = () => {
+                clearTimeout(timeout);
+                loader.hidden = true;
+            };
+            // A slow or failed request must never trap visitors behind the loader.
+            const timeout = setTimeout(dismiss, 12000);
+            loader.querySelector('button').addEventListener('click', dismiss);
+            window.addEventListener('load', async () => {
+                const portrait = document.querySelector('.portrait-crop img');
+                await Promise.allSettled([
+                    portrait?.decode?.(),
+                    document.fonts?.ready
+                ]);
+                dismiss();
+            }, { once: true });
+            window.addEventListener('pageshow', event => {
+                if (event.persisted) dismiss();
+            });
+        })();
+    </script>
     <div class="cursor" aria-hidden="true"></div>
     <svg width="0" height="0" aria-hidden="true" style="position:absolute;pointer-events:none"><defs><filter id="portrait-alpha" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncA type="linear" slope="1.603773585" intercept="-0.603773585"/></feComponentTransfer></filter></defs></svg>
     <div id="smooth-wrapper">

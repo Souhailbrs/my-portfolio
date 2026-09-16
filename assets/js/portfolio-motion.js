@@ -46,14 +46,29 @@
     }
     const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
     const cursor = document.querySelector('.cursor');
-    const hideCursor = () => cursor.classList.remove('cursor-visible');
+    let cursorFrame = 0;
+    let cursorX = 0;
+    let cursorY = 0;
+    const hideCursor = () => {
+        cancelAnimationFrame(cursorFrame);
+        cursorFrame = 0;
+        cursor.classList.remove('cursor-visible');
+    };
     document.addEventListener('pointermove', event => {
         if (!finePointer.matches || event.pointerType !== 'mouse') {
             hideCursor();
             return;
         }
-        cursor.style.transform = `translate3d(${event.clientX}px, ${event.clientY}px, 0)`;
-        cursor.classList.add('cursor-visible');
+        cursorX = event.clientX;
+        cursorY = event.clientY;
+        if (!cursorFrame) cursorFrame = requestAnimationFrame(() => {
+            // Follow the newest pointer position exactly, without trailing or easing.
+            cursor.style.transform = `translate3d(${cursorX}px, ${cursorY}px, 0)`;
+            cursor.classList.add('cursor-visible');
+            cursorFrame = 0;
+        });
+    }, { passive: true });
+    document.addEventListener('pointerover', event => {
         cursor.classList.toggle('cursor-hover', Boolean(event.target.closest('a, button, input, textarea, select, [role="button"]')));
     }, { passive: true });
     document.documentElement.addEventListener('pointerleave', hideCursor);

@@ -22,3 +22,5 @@ Contact layout: the legacy negative scroll transform is removed and the contact 
 Theme: the supplied purple-to-indigo banner informs the global palette. Core colors are purple #ad4bc5, indigo #4b50b9, and lavender #c7a4f5. Buttons use a slightly darker purple endpoint for white-label contrast. Backgrounds, cards, certificates, roadmap markers, focus states, and contact controls use coordinated violet tones. Technology and client logos retain their own brand colors. The portrait remains stationary.
 
 Certificate cards reveal in sequence, with floating issuer logos, a sweeping highlight, and pointer hover depth. Effects pause offscreen and honor reduced motion. Testimonials use a keyboard-focusable native scroll-snap track with labeled previous/next buttons. The portrait never animates.
+
+The loading screen waits for page assets and portrait decoding, with a Continue button and a 12-second fallback for stalled requests. It stays hidden when JavaScript is disabled. The custom cursor follows the latest pointer position on the next animation frame without position easing; only its hover appearance animates.
