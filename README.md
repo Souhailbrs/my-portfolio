@@ -1,4 +1,4 @@
-﻿# Souhail Bourassi - portfolio
+# Souhail Bourassi - portfolio
 
 A static portfolio with an enlarged portrait, a stationary photo with static depth shadows, and floating three-dimensional technology badges. Hover or focus the portrait to reveal its Microsoft stack; tap to toggle on mobile. Mobile badges appear below the portrait. Escape dismisses the reveal. Reduced-motion preferences disable floating animation.
 
@@ -23,4 +23,4 @@ Theme: the supplied purple-to-indigo banner informs the global palette. Core col
 
 Certificate cards reveal in sequence, with floating issuer logos, a sweeping highlight, and pointer hover depth. Effects pause offscreen and honor reduced motion. Testimonials use a keyboard-focusable native scroll-snap track with labeled previous/next buttons. The portrait never animates.
 
-The loading screen waits for page assets and portrait decoding, with a Continue button and a 12-second fallback for stalled requests. It stays hidden when JavaScript is disabled. The custom cursor follows the latest pointer position on the next animation frame without position easing; only its hover appearance animates.
+The loading screen waits for page assets and portrait decoding, with a Continue button and a 12-second fallback for stalled requests. It stays hidden when JavaScript is disabled. The site uses the normal mouse pointer; the custom cursor circle has been removed.
