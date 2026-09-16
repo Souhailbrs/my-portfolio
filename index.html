@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
 
     <!-- Metas -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Souhail Bourassi Developer Full stack developer">
     <meta name="description" content="Souhail Bourassi - Full stack developer">
     <meta name="author" content="">
@@ -18,8 +18,7 @@
     <link rel="shortcut icon" href="assets/imgs/favicon.ico">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap"
-        rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&amp;display=swap"
         rel="stylesheet">
     <link
@@ -30,55 +29,17 @@
         rel="stylesheet">
 
     <!-- Plugins -->
-    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
 
     <!-- Core Style Css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/portfolio-motion.css">
 
 </head>
 
 <body class="home-main-crev main-bg">
-    <!-- ==================== Start Loading ==================== -->
-    <div class="loader-wrap">
-        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
-            <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-        </svg>
-
-        <div class="loader-wrap-heading">
-            <div class="load-text">
-                <span>L</span>
-                <span>o</span>
-                <span>a</span>
-                <span>d</span>
-                <span>i</span>
-                <span>n</span>
-                <span>g</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- ==================== End Loading ==================== -->
-
-
-    <div class="cursor"></div>
-
-
-    <!-- ==================== Start progress-scroll-button ==================== -->
-
-    <div class="progress-wrap cursor-pointer">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
-
-    <!-- ==================== End progress-scroll-button ==================== -->
-
-    <style>
-        .personal-header {
-            padding: 49px 0 0 !important;
-        }
-    </style>
-
+    <div class="cursor" aria-hidden="true"></div>
+    <svg width="0" height="0" aria-hidden="true" style="position:absolute;pointer-events:none"><defs><filter id="portrait-alpha" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncA type="linear" slope="1.603773585" intercept="-0.603773585"/></feComponentTransfer></filter></defs></svg>
     <div id="smooth-wrapper">
 
         <!-- ==================== Start Navbar ==================== -->
@@ -92,68 +53,34 @@
 
                 <!-- ==================== Start Slider ==================== -->
 
-                <header class="personal-header position-re sub-bg">
-                    <div class="container ontop">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-10">
-                                <div class="caption text-center mb-50">
-                                    <h5 class="text-u ls1 mb-15">Hello, I'm</h5>
-                                    <h1>Souhail Bourassi</h1>
-                                    <p>Full Stack Developer | Sharepoint and Power Platform Developer Based in Casablanca,
-                                        Morocco</p>
-                                </div>
-                            </div>
+                <header id="home" class="immersive-hero">
+                    <div class="hero-layout container">
+                        <div class="hero-copy">
+                            <p class="hero-intro">Hello, I&#8217;m</p>
+                            <h1>Souhail <span class="hero-gradient">Bourassi.</span></h1>
+                            <p class="hero-description">Full Stack Developer &amp; SharePoint and Power Platform specialist. Building thoughtful digital solutions from Casablanca, Morocco.</p>
+                            <a class="hero-credentials" href="#certifications">Microsoft Certified: PL-900 &amp; PL-400 <span aria-hidden="true">&middot;</span> OpenAI certificates <span aria-hidden="true">&#8599;</span></a>
                         </div>
-                        <div class="row justify-content-around">
-                            <div class="col-lg-3">
-                                <div class="pt-40">
-                                    <div class="info-item mb-80">
-                                        <h6>Expertise</h6>
-                                        <span class="sub-title mt-5">Full Stack Developer</span>
-                                        <span class="sub-title mt-5">Sharepoint and Power Platform Developer</span>
-                                    </div>
-                                    <div class="info-item">
-                                        <div class="rate-stars mb-10 fz-14">
-                                            <span class="rate">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <span class="ml-10">4.9</span>
-                                            </span>
-                                        </div>
-                                        <p>50+ Clients Reviews</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="img">
-                                    <img src="assets/imgs/freelancer/h21.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="pt-40 text-right">
-                                    <div class="info-item d-flex align-items-center justify-content-end mb-80">
-                                        <h6 class="sub-title mr-10">Years <br> of Experience</h6>
-                                        <h2>+4</h2>
-                                    </div>
-                                    <div class="info-item">
-                                        <span class="sub-title ls1 mb-15">Working Now as</span>
-                                        <h6 class="fz-18">Sharepoint and Power Platform Developer</h6>
-                                    </div>
-                                </div>
-                            </div>
+                        <aside class="portrait-aside portrait-aside-left"><span class="hero-eyebrow">EXPERTISE</span><h2>Full Stack Developer</h2><p>SharePoint and<br>Power Platform Developer</p><div class="portrait-clients"><strong>24</strong><span>Clients</span></div><div class="portrait-rating" aria-label="Client rating: 4.9 out of 5"><span aria-hidden="true">&#9733; &#9733; &#9733; &#9733; &#9733;</span> 4.9</div><a href="#services" class="hero-secondary">Explore my expertise <span aria-hidden="true">&#8595;</span></a></aside>
+                        <div class="hero-art portrait-technologies">
+                            <button class="portrait-trigger" type="button" aria-expanded="false" aria-controls="portrait-stack" aria-label="Show technologies I use">
+                                <span class="portrait-crop"><img src="assets/imgs/freelancer/h2.png" alt="Souhail Bourassi" fetchpriority="high"></span>
+                                <span class="portrait-hint"><span class="hover-hint">Hover to explore my stack</span><span class="tap-hint">Tap to explore my stack</span><span aria-hidden="true"> +</span></span>
+                            </button>
+                            <ul id="portrait-stack" class="portrait-stack" aria-label="Technologies I use" aria-hidden="true">
+                                <li style="--order:0;--row:0"><img src="assets/imgs/freelancer/skills/vector/sharepoint.svg" alt=""><span>SharePoint</span></li>
+                                <li style="--order:1;--row:0"><img src="assets/imgs/freelancer/skills/vector/powerautomate.svg" alt=""><span>Power Automate</span></li>
+                                <li style="--order:2;--row:1"><img src="assets/imgs/freelancer/skills/intune.svg" alt=""><span>Microsoft Intune</span></li>
+                                <li style="--order:3;--row:1"><img src="assets/imgs/freelancer/skills/purview.svg" alt=""><span>Microsoft Purview</span></li>
+                                <li style="--order:4;--row:2"><img src="assets/imgs/freelancer/skills/vector/powerapps.svg" alt=""><span>Power Apps</span></li>
+                                <li style="--order:5;--row:2"><img src="assets/imgs/freelancer/skills/vector/powerbi.svg" alt=""><span>Power BI</span></li>
+                                <li style="--order:6;--row:3"><img src="assets/imgs/freelancer/skills/spfx.svg" alt=""><span>SPFx</span></li>
+                                <li style="--order:7;--row:3"><img src="assets/imgs/freelancer/skills/office365.svg" alt=""><span>Office 365 Admin</span></li>
+                                <li style="--order:8;--row:4"><img src="assets/imgs/freelancer/skills/vector/azure.svg" alt=""><span>Microsoft Azure</span></li>
+                                <li style="--order:9;--row:4"><img src="assets/imgs/freelancer/skills/vector/powershell.svg" alt=""><span>PowerShell Scripting</span></li>
+                            </ul>
                         </div>
-                    </div>
-                    <div class="curve">
-                        <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 250"
-                            enable-background="new 0 0 500 250" xml:space="preserve" preserveAspectRatio="none">
-                            <path fill="#1d1d1d"
-                                d="M250,246.5c-97.85,0-186.344-40.044-250-104.633V250h500V141.867C436.344,206.456,347.85,246.5,250,246.5z">
-                            </path>
-                        </svg>
+                        <aside class="portrait-aside portrait-aside-right"><span class="hero-eyebrow">YEARS OF EXPERIENCE</span><h2 class="portrait-years">+5</h2><p>Working now as<br>SharePoint and Power Platform Developer</p><a href="#contact" class="hero-button">Let&#8217;s talk <span aria-hidden="true">&#8599;</span></a></aside>
                     </div>
                 </header>
 
@@ -161,158 +88,98 @@
 
 
 
-                <!-- ==================== Start Marquee ==================== -->
-
-                <section class="slider-bar">
-                    <div class="main-marq pt-60 pb-60">
-                        <div class="slide-har st1">
-                            <div class="box">
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center fz-70"><span>Desktop Applications</span>
-                                        <span class="fz-50 ml-50 stroke icon">*</span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center fz-70"><span>Web Development</span>
-                                        <span class="fz-50 ml-50 stroke icon">*</span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center fz-70"><span>Mobile Applications</span>
-                                        <span class="fz-50 ml-50 stroke icon">*</span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center fz-70"><span>Power Platform</span>
-                                        <span class="fz-50 ml-50 stroke icon">*</span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center fz-70"><span>Sharepoint</span>
-                                        <span class="fz-50 ml-50 stroke icon">*</span>
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="box">
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center fz-70"><span>Daxium-Air</span>
-                                        <span class="fz-50 ml-50 stroke icon">*</span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center fz-70"><span>Power Apps</span>
-                                        <span class="fz-50 ml-50 stroke icon">*</span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center fz-70"><span>Power Bi</span>
-                                        <span class="fz-50 ml-50 stroke icon">*</span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center fz-70"><span>Power Automate</span>
-                                        <span class="fz-50 ml-50 stroke icon">*</span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center fz-70"><span>Database Maniplation</span>
-                                        <span class="fz-50 ml-50 stroke icon">*</span>
-                                    </h4>
-                                </div>
-                            </div>
+                <section class="idea-bridge" aria-labelledby="idea-bridge-heading">
+                    <div class="container idea-bridge-layout">
+                        <div class="idea-bridge-copy">
+                            <p class="idea-bridge-eyebrow">A LITTLE IDEA. A LOT OF POSSIBILITY.</p>
+                            <h2 id="idea-bridge-heading">From <em>what if</em> to <span>what's next.</span></h2>
+                            <a href="#services">See how I can help <span aria-hidden="true">&#8599;</span></a>
                         </div>
+                        <ol class="idea-path" aria-label="From idea to automation">
+                            <li><span class="idea-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M9 17v-1c0-2-4-3-4-7a7 7 0 0 1 14 0c0 4-4 5-4 7v1M9 17h6M10 21h4M10 8c0-1 1-2 2-2"/></svg></span><h3>Idea</h3><p>Your challenge</p></li>
+                            <li><span class="idea-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 7-5 5 5 5m10-10 5 5-5 5m-3-14-4 18"/></svg></span><h3>Build</h3><p>A working solution</p></li>
+                            <li><span class="idea-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m14 2-10 12h7l-1 8 10-12h-7z"/></svg></span><h3>Automate</h3><p>Less busywork</p></li>
+                        </ol>
                     </div>
                 </section>
-
-                <!-- ==================== End Marquee ==================== -->
 
 
 
                 <!-- ==================== Start Services ==================== -->
 
-                <section class="serv-box section-padding pb-0 sub-bg position-re">
-                    <div class="container pt-30">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="sec-lg-head mb-80">
-                                    <div class="position-re">
-                                        <h6 class="dot-titl-non mb-15 wow fadeIn">Featured Services</h6>
-                                        <h2 class="d-rotate wow">
-                                            <span class="rotate-text">My Services</span>
-                                        </h2>
-                                        <p class="fz-14 mt-15">I am a pretty curious person who is always looking to
-                                            know more and progress to get knowledge. Thats why you will find quite a few
-                                            skills that I can do.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-7 offset-lg-1">
-                                <div class="serv-list2">
-                                    <div class="item pt-30 pb-30 bord-thin-top">
-                                        <div class="row">
-                                            <div class="col-lg-2">
-                                                <div class="icon-img-50 md-mb30">
-                                                    <img src="assets/imgs/serv-icons/0.png" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <h6>Full Stack Development</h6>
-                                            </div>
-                                            <div class="col-lg-6 offset-lg-1">
-                                                <p>Using different technologies to create and develop websites, mobile
-                                                    applications, and desktop applications.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item pt-30 pb-30 bord-thin-top">
-                                        <div class="row">
-                                            <div class="col-lg-2">
-                                                <div class="icon-img-50 mb-30">
-                                                    <img src="assets/imgs/serv-icons/1.png" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <h6>Power Platform / Sharepoint</h6>
-                                            </div>
-                                            <div class="col-lg-6 offset-lg-1">
-                                                <p>Using different technologies to build apps using Power Apps and
-                                                    websites using SharePoint, connecting them by automating tasks using
-                                                    Power Automation, and finally showing important stats and graphs
-                                                    using Power Bi.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item pt-30 bord-thin-top">
-                                        <div class="row">
-                                            <div class="col-lg-2">
-                                                <div class="icon-img-50 mb-30">
-                                                    <img src="assets/imgs/serv-icons/2.png" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-3">
-                                                <h6>Daxium-Air</h6>
-                                            </div>
-                                            <div class="col-lg-6 offset-lg-1">
-                                                <p>mastering a new technology for making apps and backoffice websites
-                                                    without using coding, which speeds up the development of projects.
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                <section id="services" class="services-studio section-padding" aria-labelledby="services-heading">
+                    <div class="container">
+                        <div class="services-heading">
+                            <div><p class="services-eyebrow"><span></span> WHAT I CAN HELP YOU BUILD</p><h2 id="services-heading">Digital solutions.<br><span>Built for your business.</span></h2></div>
+                            <p class="services-intro">From custom applications to your Microsoft ecosystem, I connect development, automation, and administration to make everyday work simpler.</p>
                         </div>
-                    </div>
-                    <br>
-                    <div class="curve revers">
-                        <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 250"
-                            enable-background="new 0 0 500 250" xml:space="preserve" preserveAspectRatio="none">
-                            <path fill="#1d1d1d"
-                                d="M250,246.5c-97.85,0-186.344-40.044-250-104.633V250h500V141.867C436.344,206.456,347.85,246.5,250,246.5z">
-                            </path>
-                        </svg>
+                        <div class="services-grid">
+                            <article class="service-card service-featured">
+                                <div class="service-card-top"><span class="service-icon"><img src="assets/imgs/freelancer/skills/vector/react.svg" alt="" loading="lazy"></span><span class="service-number">01</span></div>
+                                <p class="service-category">APPLICATIONS</p>
+                                <h3>Full Stack Development</h3>
+                                <p class="service-description">From a first idea to a working product. Custom web, mobile, and desktop applications built around the way you work.</p>
+                                <ul class="service-tags" aria-label="Technologies and expertise"><li>React &amp; Angular</li><li>Laravel</li><li>C# / .NET</li><li>Flutter</li></ul>
+                                <a class="service-link" href="#contact" aria-label="Discuss Full Stack Development">Discuss your project <span aria-hidden="true">&#8599;</span></a>
+                            </article>
+                            <article class="service-card service-featured">
+                                <div class="service-card-top"><span class="service-icon"><img src="assets/imgs/freelancer/skills/vector/powerautomate.svg" alt="" loading="lazy"></span><span class="service-number">02</span></div>
+                                <p class="service-category">BUSINESS AUTOMATION</p>
+                                <h3>Power Platform & Automation</h3>
+                                <p class="service-description">Replace repetitive tasks with connected workflows, build practical business apps, and turn your data into clear Power BI dashboards.</p>
+                                <ul class="service-tags" aria-label="Technologies and expertise"><li>Power Apps</li><li>Power Automate</li><li>Power BI</li></ul>
+                                <a class="service-link" href="#contact" aria-label="Discuss Power Platform &amp; Automation">Discuss your project <span aria-hidden="true">&#8599;</span></a>
+                            </article>
+                            <article class="service-card">
+                                <div class="service-card-top"><span class="service-icon"><img src="assets/imgs/freelancer/skills/spfx.svg" alt="" loading="lazy"></span><span class="service-number">03</span></div>
+                                <p class="service-category">COLLABORATION</p>
+                                <h3>SharePoint & SPFx</h3>
+                                <p class="service-description">Create team sites, organize documents, and extend SharePoint with custom web parts that connect people to the tools they need.</p>
+                                <ul class="service-tags" aria-label="Technologies and expertise"><li>SharePoint</li><li>SPFx</li></ul>
+                                <a class="service-link" href="#contact" aria-label="Discuss SharePoint &amp; SPFx">Discuss your project <span aria-hidden="true">&#8599;</span></a>
+                            </article>
+                            <article class="service-card">
+                                <div class="service-card-top"><span class="service-icon"><img src="assets/imgs/freelancer/skills/office365.svg" alt="" loading="lazy"></span><span class="service-number">04</span></div>
+                                <p class="service-category">DIGITAL WORKPLACE</p>
+                                <h3>Microsoft 365 Administration</h3>
+                                <p class="service-description">Keep your workspace organized with user and license administration, service configuration, and day-to-day Microsoft 365 support.</p>
+                                <ul class="service-tags" aria-label="Technologies and expertise"><li>Office 365</li><li>User administration</li></ul>
+                                <a class="service-link" href="#contact" aria-label="Discuss Microsoft 365 Administration">Discuss your project <span aria-hidden="true">&#8599;</span></a>
+                            </article>
+                            <article class="service-card">
+                                <div class="service-card-top"><span class="service-icon"><img src="assets/imgs/freelancer/skills/intune.svg" alt="" loading="lazy"></span><span class="service-number">05</span></div>
+                                <p class="service-category">DEVICES & APPS</p>
+                                <h3>Endpoint Management</h3>
+                                <p class="service-description">Manage device enrollment, application deployment, and configuration policies through Microsoft Intune.</p>
+                                <ul class="service-tags" aria-label="Technologies and expertise"><li>Microsoft Intune</li><li>Device policies</li></ul>
+                                <a class="service-link" href="#contact" aria-label="Discuss Endpoint Management">Discuss your project <span aria-hidden="true">&#8599;</span></a>
+                            </article>
+                            <article class="service-card">
+                                <div class="service-card-top"><span class="service-icon"><img src="assets/imgs/freelancer/skills/vector/azure.svg" alt="" loading="lazy"></span><span class="service-number">06</span></div>
+                                <p class="service-category">CLOUD & SCRIPTING</p>
+                                <h3>Azure & PowerShell</h3>
+                                <p class="service-description">Configure Azure resources and use PowerShell scripts to automate administration, reporting, and recurring operational tasks.</p>
+                                <ul class="service-tags" aria-label="Technologies and expertise"><li>Microsoft Azure</li><li>PowerShell</li></ul>
+                                <a class="service-link" href="#contact" aria-label="Discuss Azure &amp; PowerShell">Discuss your project <span aria-hidden="true">&#8599;</span></a>
+                            </article>
+                            <article class="service-card">
+                                <div class="service-card-top"><span class="service-icon"><img src="assets/imgs/freelancer/skills/purview.svg" alt="" loading="lazy"></span><span class="service-number">07</span></div>
+                                <p class="service-category">INFORMATION GOVERNANCE</p>
+                                <h3>Data Governance & Protection</h3>
+                                <p class="service-description">Organize and protect business information with Microsoft Purview, including information classification and data protection policies.</p>
+                                <ul class="service-tags" aria-label="Technologies and expertise"><li>Microsoft Purview</li><li>Information protection</li></ul>
+                                <a class="service-link" href="#contact" aria-label="Discuss Data Governance &amp; Protection">Discuss your project <span aria-hidden="true">&#8599;</span></a>
+                            </article>
+                            <article class="service-card">
+                                <div class="service-card-top"><span class="service-icon"><img src="assets/imgs/freelancer/skills/normalized/daxium.svg" alt="" loading="lazy"></span><span class="service-number">08</span></div>
+                                <p class="service-category">BUSINESS TOOLS</p>
+                                <h3>Daxium-Air Solutions</h3>
+                                <p class="service-description">Build low-code business apps, digital forms, and back-office workflows that help teams capture and manage their operational data.</p>
+                                <ul class="service-tags" aria-label="Technologies and expertise"><li>Daxium-Air</li><li>Low-code apps</li></ul>
+                                <a class="service-link" href="#contact" aria-label="Discuss Daxium-Air Solutions">Discuss your project <span aria-hidden="true">&#8599;</span></a>
+                            </article>
+                        </div>
+                        <div class="services-cta"><div><span class="services-eyebrow">LET'S FIND THE RIGHT APPROACH</span><h3>One project. A connected set of skills.</h3><p>Tell me what you want to improve, build, or automate.</p></div><a href="#contact" class="hero-button">Let&#8217;s talk about it <span aria-hidden="true">&#8599;</span></a></div>
                     </div>
                 </section>
 
@@ -330,137 +197,81 @@
 
                 <!-- ==================== Start skills ==================== -->
 
-                <section class="skills-exp section-padding" data-scroll-index="4">
+                <section id="experience" class="skills-exp section-padding">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="sec-lg-head mb-80">
                                     <div class="position-re">
-                                        <h6 class="dot-titl-non mb-10 wow fadeIn">Skills & Experience</h6>
-                                        <h2 class="fz-50 d-rotate wow">
-                                            <span class="rotate-text">My Experience</span>
+                                        <h6 class="dot-titl-non mb-10  ">Skills & Experience</h6>
+                                        <h2 class="fz-50  ">
+                                            <span class="rotate-text">My Toolkit</span>
                                         </h2>
                                     </div>
                                 </div>
-                                <div class="skill-item d-flex justify-content-between md-mb50">
-                                    <div class="item text-center">
-                                        <div class="icon-img-60 m-auto">
-                                            <img src="assets/imgs/freelancer/skills/laravel.png" alt="">
-                                        </div>
-                                        <span class="mt-15">Laravel</span>
-                                    </div>
-                                    <div class="item text-center">
-                                        <div class="icon-img-60 m-auto">
-                                            <img src="assets/imgs/freelancer/skills/react.png" alt="">
-                                        </div>
-                                        <span class="mt-15">React js</span>
-                                    </div>
-                                    <div class="item text-center">
-                                        <div class="icon-img-60 m-auto">
-                                            <img src="assets/imgs/freelancer/skills/angular.png" alt="">
-                                        </div>
-                                        <span class="mt-15">Angular</span>
-                                    </div>
-                                    <div class="item text-center">
-                                        <div class="icon-img-60 m-auto">
-                                            <img src="assets/imgs/freelancer/skills/vue.png" alt="">
-                                        </div>
-                                        <span class="mt-15">Vue js</span>
-                                    </div>
-
-                                </div>
-                                <br>
-                                <div class="skill-item d-flex justify-content-between md-mb50">
-                                    <div class="item text-center">
-                                        <div class="icon-img-60 m-auto">
-                                            <img src="assets/imgs/freelancer/skills/csharp.png" alt="">
-                                        </div>
-                                        <span class="mt-15">C#.NET</span>
-                                    </div>
-                                    <div class="item text-center">
-                                        <div class="icon-img-60 m-auto">
-                                            <img src="assets/imgs/freelancer/skills/flutter.png" alt="">
-                                        </div>
-                                        <span class="mt-15">Flutter</span>
-                                    </div>
-                                    <div class="item text-center">
-                                        <div class="icon-img-60 m-auto">
-                                            <img src="assets/imgs/freelancer/skills/sharepoint.png" alt="">
-                                        </div>
-                                        <span class="mt-15">Sharepoint</span>
-                                    </div>
-                                    <div class="item text-center">
-                                        <div class="icon-img-60 m-auto">
-                                            <img src="assets/imgs/freelancer/skills/daxium.png" alt="">
-                                        </div>
-                                        <span class="mt-15">Daxium-Air</span>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="skill-item d-flex justify-content-between md-mb50">
-                                    <div class="item text-center">
-                                        <div class="icon-img-60 m-auto">
-                                            <img src="assets/imgs/freelancer/skills/powerapps.png" alt="">
-                                        </div>
-                                        <span class="mt-15">Power Apps</span>
-                                    </div>
-                                    <div class="item text-center">
-                                        <div class="icon-img-60 m-auto">
-                                            <img src="assets/imgs/freelancer/skills/powerbi.png" alt="">
-                                        </div>
-                                        <span class="mt-15">Power BI</span>
-                                    </div>
-                                    <div class="item text-center">
-                                        <div class="icon-img-60 m-auto">
-                                            <img src="assets/imgs/freelancer/skills/powerautomate.png" alt="">
-                                        </div>
-                                        <span class="mt-15">Power Automate</span>
-                                    </div>
+                                <div class="skill-item skills-grid">
+                                    <div class="item text-center"><div class="icon-img-60 m-auto"><img src="assets/imgs/freelancer/skills/vector/laravel.svg" alt="" loading="lazy"></div><span class="mt-15">Laravel</span></div>
+                                    <div class="item text-center"><div class="icon-img-60 m-auto"><img src="assets/imgs/freelancer/skills/vector/react.svg" alt="" loading="lazy"></div><span class="mt-15">React</span></div>
+                                    <div class="item text-center"><div class="icon-img-60 m-auto"><img src="assets/imgs/freelancer/skills/vector/angular.svg" alt="" loading="lazy"></div><span class="mt-15">Angular</span></div>
+                                    <div class="item text-center"><div class="icon-img-60 m-auto"><img src="assets/imgs/freelancer/skills/vector/vue.svg" alt="" loading="lazy"></div><span class="mt-15">Vue.js</span></div>
+                                    <div class="item text-center"><div class="icon-img-60 m-auto"><img src="assets/imgs/freelancer/skills/vector/csharp.svg" alt="" loading="lazy"></div><span class="mt-15">C# / .NET</span></div>
+                                    <div class="item text-center"><div class="icon-img-60 m-auto"><img src="assets/imgs/freelancer/skills/vector/flutter.svg" alt="" loading="lazy"></div><span class="mt-15">Flutter</span></div>
+                                    <div class="item text-center"><div class="icon-img-60 m-auto"><img src="assets/imgs/freelancer/skills/vector/sharepoint.svg" alt="" loading="lazy"></div><span class="mt-15">SharePoint</span></div>
+                                    <div class="item text-center"><div class="icon-img-60 m-auto"><img src="assets/imgs/freelancer/skills/normalized/daxium.svg" alt="" loading="lazy"></div><span class="mt-15">Daxium-Air</span></div>
+                                    <div class="item text-center"><div class="icon-img-60 m-auto"><img src="assets/imgs/freelancer/skills/vector/powerapps.svg" alt="" loading="lazy"></div><span class="mt-15">Power Apps</span></div>
+                                    <div class="item text-center"><div class="icon-img-60 m-auto"><img src="assets/imgs/freelancer/skills/vector/powerbi.svg" alt="" loading="lazy"></div><span class="mt-15">Power BI</span></div>
+                                    <div class="item text-center"><div class="icon-img-60 m-auto"><img src="assets/imgs/freelancer/skills/vector/powerautomate.svg" alt="" loading="lazy"></div><span class="mt-15">Power Automate</span></div>
+                                    <div class="item text-center"><div class="icon-img-60 m-auto"><img src="assets/imgs/freelancer/skills/intune.svg" alt="" loading="lazy"></div><span class="mt-15">Microsoft Intune</span></div>
+                                    <div class="item text-center"><div class="icon-img-60 m-auto"><img src="assets/imgs/freelancer/skills/purview.svg" alt="" loading="lazy"></div><span class="mt-15">Microsoft Purview</span></div>
+                                    <div class="item text-center"><div class="icon-img-60 m-auto"><img src="assets/imgs/freelancer/skills/spfx.svg" alt="" loading="lazy"></div><span class="mt-15">SPFx</span></div>
+                                    <div class="item text-center"><div class="icon-img-60 m-auto"><img src="assets/imgs/freelancer/skills/office365.svg" alt="" loading="lazy"></div><span class="mt-15">Office 365 Admin</span></div>
+                                    <div class="item text-center"><div class="icon-img-60 m-auto"><img src="assets/imgs/freelancer/skills/vector/azure.svg" alt="" loading="lazy"></div><span class="mt-15">Microsoft Azure</span></div>
+                                    <div class="item text-center"><div class="icon-img-60 m-auto"><img src="assets/imgs/freelancer/skills/vector/powershell.svg" alt="" loading="lazy"></div><span class="mt-15">PowerShell Scripting</span></div>
                                 </div>
                             </div>
-                            <div class="col-lg-5 offset-lg-1 valign">
-                                <div class="exp-items full-width">
-                                    <div class="item d-flex pb-30 pt-30 mb-30 bord-thin-top bord-thin-bottom">
-                                        <div class="title">
-                                            <h6>BMR</h6>
-                                            <p class="fz-12">Full Stack Developer</p>
-                                        </div>
-                                        <div class="date ml-auto text-right">
-                                            Casablanca , Morocco
-                                            <p class="fz-12">March 2023 – February 2025</p>
-                                        </div>
-                                    </div>
-                                    <div class="item d-flex pb-30 mb-30 bord-thin-bottom">
-                                        <div class="title">
-                                            <h6>BRAMS</h6>
-                                            <p class="fz-12">Full Stack Developer</p>
-                                        </div>
-                                        <div class="date ml-auto text-right">
-                                            Casablanca , Morocco
-                                            <p class="fz-12">July/2022 - December/2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="item d-flex pb-30 mb-30 bord-thin-bottom">
-                                        <div class="title">
-                                            <h6>AIR FORCE ROYAL EFSNO</h6>
-                                            <p class="fz-12">Programmer</p>
-                                        </div>
-                                        <div class="date ml-auto text-right">
-                                            Marrakech, Morocco
-                                            <p class="fz-12">June/2021 - April/2022</p>
-                                        </div>
-                                    </div>
-                                    <div class="item d-flex pb-30 mb-30 bord-thin-bottom">
-                                        <div class="title">
-                                            <h6>ArchiZen Capital</h6>
-                                            <p class="fz-12">FULL STACK DEVELOPER</p>
-                                        </div>
-                                        <div class="date ml-auto text-right">
-                                            Casablanca, Morocco
-                                            <p class="fz-12">October/2020 - May/2021</p>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="col-lg-5 offset-lg-1 roadmap-column">
+                                <section class="career-roadmap" aria-labelledby="roadmap-heading">
+                                    <div class="roadmap-heading"><p class="services-eyebrow"><span></span> MY CAREER JOURNEY</p><h2 id="roadmap-heading">The road so far<span>.</span></h2><p>Different teams. New challenges.<br>A journey of building and learning.</p><div class="roadmap-legend"><span>2020 <span aria-hidden="true">&#8594;</span> 2025</span><span>04 career milestones</span></div></div>
+                                    <ol class="roadmap-list">
+                                        <li class="roadmap-stop" data-milestone="1">
+                                            <span class="roadmap-node" aria-hidden="true">01</span>
+                                            <article class="roadmap-card">
+                                                <div class="roadmap-card-top"><span class="roadmap-chapter">THE START</span><span class="roadmap-year" aria-hidden="true">2020</span></div>
+                                                <h3>ArchiZen Capital</h3><p class="roadmap-role">Full Stack Developer</p>
+                                                <p class="roadmap-date"><time datetime="2020-10">Oct 2020</time><span aria-hidden="true"> &mdash; </span><span class="visually-hidden"> to </span><time datetime="2021-05">May 2021</time></p>
+                                                <p class="roadmap-location"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg>Casablanca, Morocco</p>
+                                            </article>
+                                        </li>
+                                        <li class="roadmap-stop" data-milestone="2">
+                                            <span class="roadmap-node" aria-hidden="true">02</span>
+                                            <article class="roadmap-card">
+                                                <div class="roadmap-card-top"><span class="roadmap-chapter">NEXT CHAPTER</span><span class="roadmap-year" aria-hidden="true">2021</span></div>
+                                                <h3>AIR FORCE ROYAL EFSNO</h3><p class="roadmap-role">Programmer</p>
+                                                <p class="roadmap-date"><time datetime="2021-06">Jun 2021</time><span aria-hidden="true"> &mdash; </span><span class="visually-hidden"> to </span><time datetime="2022-04">Apr 2022</time></p>
+                                                <p class="roadmap-location"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg>Marrakech, Morocco</p>
+                                            </article>
+                                        </li>
+                                        <li class="roadmap-stop" data-milestone="3">
+                                            <span class="roadmap-node" aria-hidden="true">03</span>
+                                            <article class="roadmap-card">
+                                                <div class="roadmap-card-top"><span class="roadmap-chapter">MOVING FORWARD</span><span class="roadmap-year" aria-hidden="true">2022</span></div>
+                                                <h3>BRAMS</h3><p class="roadmap-role">Full Stack Developer</p>
+                                                <p class="roadmap-date"><time datetime="2022-07">Jul 2022</time><span aria-hidden="true"> &mdash; </span><span class="visually-hidden"> to </span><time datetime="2022-12">Dec 2022</time></p>
+                                                <p class="roadmap-location"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg>Casablanca, Morocco</p>
+                                            </article>
+                                        </li>
+                                        <li class="roadmap-stop" data-milestone="4">
+                                            <span class="roadmap-node" aria-hidden="true">04</span>
+                                            <article class="roadmap-card">
+                                                <div class="roadmap-card-top"><span class="roadmap-chapter">LATEST LISTED ROLE</span><span class="roadmap-year" aria-hidden="true">2023</span></div>
+                                                <h3>BMR</h3><p class="roadmap-role">Full Stack Developer</p>
+                                                <p class="roadmap-date"><time datetime="2023-03">Mar 2023</time><span aria-hidden="true"> &mdash; </span><span class="visually-hidden"> to </span><time datetime="2025-02">Feb 2025</time></p>
+                                                <p class="roadmap-location"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></svg>Casablanca, Morocco</p>
+                                            </article>
+                                        </li>
+                                    </ol>
+                                    <div class="roadmap-next"><span class="roadmap-next-icon" aria-hidden="true">&#8599;</span><div><p>THE NEXT CHAPTER</p><a href="#contact">Let's build it together <span aria-hidden="true">&#8594;</span></a></div></div>
+                                </section>
                             </div>
                         </div>
                     </div>
@@ -470,60 +281,48 @@
 
 
 
+
+                <section id="certifications" class="certifications-section section-padding" aria-labelledby="certifications-heading">
+                    <div class="container"><div class="certifications-heading"><div><p class="services-eyebrow"><span></span> LEARNING &amp; CREDENTIALS</p><h2 id="certifications-heading">Certified to keep building.</h2></div><p>Microsoft Power Platform certifications<br>and OpenAI technical learning.</p></div>
+                    <div class="certifications-grid"><article class="certification-card "><div class="certificate-top"><span class="certificate-issuer"><img class="certificate-logo certificate-logo-microsoft" src="assets/imgs/certifications/microsoft.svg" alt="" width="36" height="36">Microsoft</span></div><span class="certificate-code">PL-900</span><h3>Power Platform Fundamentals</h3><p>Microsoft Certified</p></article><article class="certification-card "><div class="certificate-top"><span class="certificate-issuer"><img class="certificate-logo certificate-logo-microsoft" src="assets/imgs/certifications/microsoft.svg" alt="" width="36" height="36">Microsoft</span></div><span class="certificate-code">PL-400</span><h3>Power Platform Developer Associate</h3><p>Microsoft Certified</p></article><article class="certification-card certificate-ai"><div class="certificate-top"><span class="certificate-issuer"><img class="certificate-logo certificate-logo-openai" src="assets/imgs/certifications/openai.svg" alt="" width="36" height="36">OpenAI</span></div><span class="certificate-code">Technical</span><h3>Technical Practitioner</h3><p>Certificate</p></article><article class="certification-card certificate-ai"><div class="certificate-top"><span class="certificate-issuer"><img class="certificate-logo certificate-logo-openai" src="assets/imgs/certifications/openai.svg" alt="" width="36" height="36">OpenAI</span></div><span class="certificate-code">Foundational</span><h3>Foundational Knowledge</h3><p>Certificate</p></article></div></div>
+                </section>
+
                 <!-- ==================== Start Testimonials ==================== -->
 
-                <section class="testim-crv section-padding sub-bg" data-scroll-index="5">
+                <section class="testim-crv section-padding sub-bg">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-4 valign">
                                 <div class="sec-lg-head md-mb80">
                                     <div class="position-re">
-                                        <h6 class="dot-titl-non mb-10 wow fadeIn">What Clients and Colleagues Says?
+                                        <h6 class="dot-titl-non mb-10  ">What Clients and Colleagues Say
                                         </h6>
-                                        <h2 class="fz-50 d-rotate wow">
+                                        <h2 class="fz-50  ">
                                             <span class="rotate-text">Testimonials</span>
                                         </h2>
                                     </div>
                                     <div class="swiper-controls testim-controls arrow-out d-flex mt-50">
-                                        <div class="swiper-button-prev">
-                                            <span class="left">
-                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M17.2031 10.3281L11.5781 15.9531C11.535 15.9961 11.4839 16.0303 11.4276 16.0536C11.3713 16.077 11.3109 16.089 11.25 16.089C11.1891 16.089 11.1287 16.077 11.0724 16.0536C11.0161 16.0303 10.965 15.9961 10.9219 15.9531C10.8788 15.91 10.8446 15.8588 10.8213 15.8025C10.798 15.7462 10.786 15.6859 10.786 15.6249C10.786 15.564 10.798 15.5036 10.8213 15.4473C10.8446 15.391 10.8788 15.3399 10.9219 15.2968L15.7422 10.4687H3.125C3.00068 10.4687 2.88145 10.4193 2.79354 10.3314C2.70564 10.2435 2.65625 10.1242 2.65625 9.99993C2.65625 9.87561 2.70564 9.75638 2.79354 9.66847C2.88145 9.58056 3.00068 9.53118 3.125 9.53118H15.7422L10.9219 4.70305C10.8349 4.61603 10.786 4.498 10.786 4.37493C10.786 4.25186 10.8349 4.13383 10.9219 4.0468C11.0089 3.95978 11.1269 3.91089 11.25 3.91089C11.3731 3.91089 11.4911 3.95978 11.5781 4.0468L17.2031 9.6718C17.2476 9.71412 17.2829 9.76503 17.3071 9.82143C17.3313 9.87784 17.3438 9.93856 17.3438 9.99993C17.3438 10.0613 17.3313 10.122 17.3071 10.1784C17.2829 10.2348 17.2476 10.2857 17.2031 10.3281Z"
-                                                        fill="currentColor"></path>
-                                                </svg>
-                                            </span>
-                                        </div>
-                                        <div class="swiper-button-next ml-50">
-                                            <span class="right">
-                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M17.2031 10.3281L11.5781 15.9531C11.535 15.9961 11.4839 16.0303 11.4276 16.0536C11.3713 16.077 11.3109 16.089 11.25 16.089C11.1891 16.089 11.1287 16.077 11.0724 16.0536C11.0161 16.0303 10.965 15.9961 10.9219 15.9531C10.8788 15.91 10.8446 15.8588 10.8213 15.8025C10.798 15.7462 10.786 15.6859 10.786 15.6249C10.786 15.564 10.798 15.5036 10.8213 15.4473C10.8446 15.391 10.8788 15.3399 10.9219 15.2968L15.7422 10.4687H3.125C3.00068 10.4687 2.88145 10.4193 2.79354 10.3314C2.70564 10.2435 2.65625 10.1242 2.65625 9.99993C2.65625 9.87561 2.70564 9.75638 2.79354 9.66847C2.88145 9.58056 3.00068 9.53118 3.125 9.53118H15.7422L10.9219 4.70305C10.8349 4.61603 10.786 4.498 10.786 4.37493C10.786 4.25186 10.8349 4.13383 10.9219 4.0468C11.0089 3.95978 11.1269 3.91089 11.25 3.91089C11.3731 3.91089 11.4911 3.95978 11.5781 4.0468L17.2031 9.6718C17.2476 9.71412 17.2829 9.76503 17.3071 9.82143C17.3313 9.87784 17.3438 9.93856 17.3438 9.99993C17.3438 10.0613 17.3313 10.122 17.3071 10.1784C17.2829 10.2348 17.2476 10.2857 17.2031 10.3281Z"
-                                                        fill="currentColor"></path>
-                                                </svg>
-                                            </span>
-                                        </div>
+                                        <button type="button" class="swiper-button-prev" aria-label="Previous testimonial"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg></button>
+                                        <button type="button" class="swiper-button-next" aria-label="Next testimonial"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></button>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-8">
-                                <div class="testim-swiper2" data-carousel="swiper" data-items="2" data-loop="true"
-                                    data-space="30">
+                                <div class="testim-swiper2"
+                                   >
                                     <div id="content-carousel-container-unq-testim" class="swiper-container"
-                                        data-swiper="container">
-                                        <div class="swiper-wrapper">
+                                       >
+                                        <div class="swiper-wrapper" tabindex="0" role="region" aria-label="Client testimonials">
                                             <div class="swiper-slide">
                                                 <div class="item">
                                                     <div class="cont mb-40">
                                                         <div class="rate-stars mb-20 fz-12">
                                                             <span class="rate main-color">
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
+                                                                <span aria-hidden="true">?</span>
+                                                                <span aria-hidden="true">?</span>
+                                                                <span aria-hidden="true">?</span>
+                                                                <span aria-hidden="true">?</span>
+                                                                <span aria-hidden="true">?</span>
                                                             </span>
                                                         </div>
                                                         <p class="fw-400">I'm quite impressed with Souhail's ability to
@@ -554,11 +353,11 @@
                                                     <div class="cont mb-40">
                                                         <div class="rate-stars mb-20 fz-12">
                                                             <span class="rate main-color">
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
+                                                                <span aria-hidden="true">?</span>
+                                                                <span aria-hidden="true">?</span>
+                                                                <span aria-hidden="true">?</span>
+                                                                <span aria-hidden="true">?</span>
+                                                                <span aria-hidden="true">?</span>
                                                             </span>
                                                         </div>
                                                         <p class="fw-400">Souhail is a particularly exceptional
@@ -592,11 +391,11 @@
                                                     <div class="cont mb-40">
                                                         <div class="rate-stars mb-20 fz-12">
                                                             <span class="rate main-color">
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
+                                                                <span aria-hidden="true">?</span>
+                                                                <span aria-hidden="true">?</span>
+                                                                <span aria-hidden="true">?</span>
+                                                                <span aria-hidden="true">?</span>
+                                                                <span aria-hidden="true">?</span>
                                                             </span>
                                                         </div>
                                                         <p class="fw-400">We collaborated on numerous projects, and
@@ -630,11 +429,11 @@
                                                     <div class="cont mb-40">
                                                         <div class="rate-stars mb-20 fz-12">
                                                             <span class="rate main-color">
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
-                                                                <i class="fas fa-star"></i>
+                                                                <span aria-hidden="true">?</span>
+                                                                <span aria-hidden="true">?</span>
+                                                                <span aria-hidden="true">?</span>
+                                                                <span aria-hidden="true">?</span>
+                                                                <span aria-hidden="true">?</span>
                                                             </span>
                                                         </div>
                                                         <p class="fw-400">Souhail played a pivotal role in our project,
@@ -681,8 +480,8 @@
                 <div class="brand-sec slider-bar">
                     <div class="container">
                         <div class="sec-lg-head text-center mb-80">
-                            <h6 class="dot-titl-non mb-15 wow fadeIn">My Clients</h6>
-                            <h2 class="d-rotate wow">
+                            <h6 class="dot-titl-non mb-15  ">My Clients</h6>
+                            <h2 class=" ">
                                 <span class="rotate-text">Companies I've Worked With</span>
                             </h2>
                         </div>
@@ -698,106 +497,106 @@
                         <div class="slide-har st1">
                             <div class="box">
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b1.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b1.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b2.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b2.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b3.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b3.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b4.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b4.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b5.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b5.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b6.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b6.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b7.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b7.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b8.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b8.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b4.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b4.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b5.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b5.svg" alt="">
+                                    </div>
                                 </div>
                             </div>
                             <div class="box">
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b1.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b1.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b2.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b2.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b3.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b3.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b4.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b4.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b5.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b5.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b6.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b6.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b7.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b7.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b8.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b8.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b4.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b4.svg" alt="">
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <a href="#0" class="img">
-                                        <img src="assets/imgs/brands/b5.png" alt="">
-                                    </a>
+                                    <div class="img">
+                                        <img src="assets/imgs/brands/normalized/b5.svg" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -811,32 +610,32 @@
 
             <!-- ==================== Start Contact ==================== -->
 
-            <section class="contact-crev section-padding" data-scroll-index="7">
-                <div class="contact-container">
+            <section id="contact" class="contact-crev no-crev contact-studio section-padding" aria-labelledby="contact-heading">
+                <div class="contact-shell">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-5">
                                 <div class="sec-lg-head md-mb80">
-                                    <h6 class="dot-titl-non mb-10 wow fadeIn">Get In Touch</h6>
-                                    <h2 class="fz-50 d-rotate wow">
-                                        <span class="rotate-text">Let's work together!</span>
+                                    <h6 class="dot-titl-non mb-10">Get In Touch</h6>
+                                    <h2 id="contact-heading" class="fz-50">
+                                        Let's build<br><span>something useful.</span>
                                     </h2>
-                                    <p class="fz-15 mt-10 wow fadeIn">If you would like to work together or just want to
-                                        get in
-                                        touch, i’d love to hear from you!</p>
+                                    <p class="fz-15 mt-10">Have a project in mind or need help with your Microsoft environment? I'd love to hear from you.</p>
+                                    <a class="contact-email" href="mailto:souhailbourassi@gmail.com">souhailbourassi@gmail.com <span aria-hidden="true">&#8599;</span></a>
+                                    <p class="contact-location">Casablanca, Morocco</p>
                                     <ul class="rest social-text d-flex mt-60">
                                         <li class="mr-30">
-                                            <a href="https://www.facebook.com/souhail.brss" target="_blank"
+                                            <a href="https://www.facebook.com/souhail.brss" target="_blank" rel="noopener noreferrer"
                                                 class="hover-this"><span class="hover-anim">Facebook</span></a>
                                         </li>
                                         <li class="mr-30">
-                                            <a href="https://www.linkedin.com/in/souhail-bourassi-301463157/"
-                                                target="_blank" class="hover-this"><span
+                                            <a href="https://www.linkedin.com/in/souhail-bourassi%F0%9F%A5%87-301463157/"
+                                                target="_blank" rel="noopener noreferrer" class="hover-this"><span
                                                     class="hover-anim">LinkedIn</span></a>
                                         </li>
                                         <li>
                                             <a href="https://www.instagram.com/souhail_brs/?igshid=YTQwZjQ0NmI0OA%3D%3D"
-                                                target="_blank" class="hover-this"><span
+                                                target="_blank" rel="noopener noreferrer" class="hover-this"><span
                                                     class="hover-anim">Instagram</span></a>
                                         </li>
                                     </ul>
@@ -845,24 +644,27 @@
                             <div class="col-lg-6 offset-lg-1 valign">
                                 <div class="full-width">
                                     <form action="https://getform.io/f/axozjrlb" method="POST">
-                                        <div class="controls row">
+                                        <h3 class="contact-form-title">Tell me about your project</h3><p class="contact-form-intro">Start with a few details. Let's take it from there.</p><div class="controls row">
 
                                             <div class="col-lg-6">
                                                 <div class="form-group mb-30">
+                                                    <label for="form_name">Your name *</label>
                                                     <input id="form_name" type="text" name="name" placeholder="Name"
-                                                        required="required">
+                                                        required="required" autocomplete="name">
                                                 </div>
                                             </div>
 
                                             <div class="col-lg-6">
                                                 <div class="form-group mb-30">
+                                                    <label for="form_email">Email address *</label>
                                                     <input id="form_email" type="email" name="email" placeholder="Email"
-                                                        required="required">
+                                                        required="required" autocomplete="email">
                                                 </div>
                                             </div>
 
                                             <div class="col-12">
                                                 <div class="form-group mb-30">
+                                                    <label for="form_subject">Subject</label>
                                                     <input id="form_subject" type="text" name="subject"
                                                         placeholder="Subject">
                                                 </div>
@@ -870,12 +672,13 @@
 
                                             <div class="col-12">
                                                 <div class="form-group">
+                                                    <label for="form_message">Your message *</label>
                                                     <textarea id="form_message" name="message" placeholder="Message"
                                                         rows="4" required="required"></textarea>
                                                 </div>
                                                 <div class="mt-30">
                                                     <button type="submit" class="butn butn-full butn-bord radius-30">
-                                                        <span class="text">Let's Talk</span>
+                                                        <span class="text">Send message <span aria-hidden="true">&#8599;</span></span>
                                                     </button>
                                                 </div>
                                             </div>
@@ -891,23 +694,10 @@
             <!-- ==================== End Contact ==================== -->
 
 
-            </main>
+
         </div>
     </div>
-    <!-- jQuery -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/jquery-migrate-3.4.0.min.js"></script>
-
-    <!-- plugins -->
-    <script src="assets/js/plugins.js"></script>
-
-    <script src="assets/js/gsap.min.js"></script>
-    <script src="assets/js/ScrollSmoother.min.js"></script>
-    <script src="assets/js/ScrollTrigger.min.js"></script>
-    <script src="assets/js/smoother-script.js"></script>
-
-    <!-- custom scripts -->
-    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/portfolio-motion.js" defer></script>
 
 </body>
 
