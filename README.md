@@ -1,26 +1,31 @@
-# Souhail Bourassi - portfolio
+# Souhail Bourassi — portfolio
 
-A static portfolio with an enlarged portrait, a stationary photo with static depth shadows, and floating three-dimensional technology badges. Hover or focus the portrait to reveal its Microsoft stack; tap to toggle on mobile. Mobile badges appear below the portrait. Escape dismisses the reveal. Reduced-motion preferences disable floating animation.
+A static, single-page portfolio with a layered 3D hero portrait and depth throughout. There is no build step: serve the folder with any static server, such as VS Code Live Server or `npx http-server`.
 
-The skills grid contains 17 technologies, including Microsoft Intune, Microsoft Purview, SPFx, Office 365 Admin, Microsoft Azure, and PowerShell Scripting. Skills use equal-sized cards and 48 x 48 vector icon viewports (42 x 42 on mobile). Client logos use consistent cards and aspect-preserving logo viewports.
+## Files
 
-Original portrait source images are retained. Unused template assets and superseded logos have been removed. SVG wrappers under each normalized directory tightly frame visible artwork to remove inconsistent transparent padding. New skills use lightweight custom SVG pictograms. The original portrait matte is removed by a display-time SVG alpha filter; its source file is unchanged.
+- `index.html`: all content and markup.
+- `assets/css/site.css`: the only stylesheet. Design tokens are at the top under `:root`.
+- `assets/js/site.js`: nav state, scroll reveals, card tilt and glare, the portrait tilt and the testimonial carousel.
+- `assets/js/hero-scene.js`: a faint Three.js starfield behind the hero. It loads `three@0.160.0` from jsDelivr through the import map in `index.html`.
 
-Serve the directory with any static HTTP server, such as VS Code Live Server. No build step is required. Main implementation: index.html, assets/css/portfolio-motion.css, and assets/js/portfolio-motion.js. The existing contact endpoint is retained. Depth effects use CSS perspective. The unused Three.js, GSAP, jQuery, smooth-scroll, and slider bundles have been removed; interactions use native browser APIs.
+## Hero portrait
 
-Services are presented as eight responsive cards: Full Stack Development, Power Platform & Automation, SharePoint & SPFx, Microsoft 365 Administration, Endpoint Management (Intune), Azure & PowerShell, Data Governance & Protection (Purview), and Daxium-Air Solutions. Cards include technology tags, subtle hover depth, scroll reveals, and links to the contact section. Service copy is based on the skills already supplied for the portfolio.
+The portrait is built from stacked CSS 3D layers inside `.portrait-card`, listed here from back to front:
 
-Experience is a chronological career roadmap with four numbered milestones (2020-2025), an illuminated route that fills as milestones enter view, dated role cards, and a next-chapter contact link. Original companies, roles, locations, and dates are preserved. The neighboring skills heading is now My Toolkit. The roadmap adapts to mobile and reduced-motion settings.
+1. **Glow:** a soft violet glow.
+2. **Floor shadow:** a soft shadow under the portrait.
+3. **Arch frame:** three `.frame-depth` slices behind it give the arch a solid, extruded edge.
+4. **Photo:** sits 30px in front of the arch, with the head breaking out above it.
+5. **Bottom fade:** blends the photo and arch into the floor.
+6. **Badges:** float further forward.
 
+The card turns toward the mouse. On touch devices it stays at a static 3D angle.
 
-The affected skill icons now use true SVG artwork rather than embedded raster wrappers. Devicon assets are MIT licensed; the license is stored in assets/imgs/freelancer/skills/vector/DEVICON-LICENSE.txt. Skill tiles are flat to avoid perspective blur.
+The portrait's dark matte is removed at display time by the SVG `#portrait-alpha` filter, so the source image is unchanged.
 
-Certifications: Microsoft Power Platform Fundamentals (PL-900), Microsoft Power Platform Developer Associate (PL-400), OpenAI Technical Practitioner, and OpenAI Foundational Knowledge. Credential ownership is supplied by the portfolio owner; no verification URLs or dates have been invented. Official Microsoft title references: https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/ and https://learn.microsoft.com/en-us/credentials/certifications/power-platform-developer-associate/.
+## Behaviour
 
-Contact layout: the legacy negative scroll transform is removed and the contact section stays in normal flow. The existing form action/method/field names are retained. Visible labels, autocomplete, a direct email link sourced from send_email.php, and native required/email validation are included. Browser checks verified layout and validation without submitting a message; actual delivery has not been tested.
-
-Theme: the supplied purple-to-indigo banner informs the global palette. Core colors are purple #ad4bc5, indigo #4b50b9, and lavender #c7a4f5. Buttons use a slightly darker purple endpoint for white-label contrast. Backgrounds, cards, certificates, roadmap markers, focus states, and contact controls use coordinated violet tones. Technology and client logos retain their own brand colors. The portrait remains stationary.
-
-Certificate cards reveal in sequence, with floating issuer logos, a sweeping highlight, and pointer hover depth. Effects pause offscreen and honor reduced motion. Testimonials use a keyboard-focusable native scroll-snap track with labeled previous/next buttons. The portrait never animates.
-
-The loading screen waits for page assets and portrait decoding, with a Continue button and a 12-second fallback for stalled requests. It stays hidden when JavaScript is disabled. The site uses the normal mouse pointer; the custom cursor circle has been removed.
+- Visitors who set `prefers-reduced-motion` get static content.
+- The starfield runs only while the hero is visible.
+- The contact form still posts to the existing Getform endpoint.
